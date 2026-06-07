@@ -6,7 +6,7 @@ export default function MusicPlayer() {
       preload="auto"
     >
       <source
-        src="/wedding-song1.mp3"
+        src="/wedding-song2.mp3"
         type="audio/mpeg"
       />
     </audio>
