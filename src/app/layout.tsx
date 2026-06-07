@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "Omkar Weds Mansi",
     images: [
       {
-        url: "/preview-image1.jpg",
+        url: "https://omkar-weds-mansi.vercel.app/preview-image1.jpg",
         width: 1200,
         height: 630,
         alt:
