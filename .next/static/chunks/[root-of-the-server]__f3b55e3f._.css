@@ -176,9 +176,9 @@
 
 /* [project]/src/app/globals.css [app-client] (css) */
 :root {
-  --navy: #081426;
-  --navy-light: #102544;
-  --navy-soft: #18345c;
+  --navy: #150826;
+  --navy-light: #221044;
+  --navy-soft: #2c185c;
   --ivory: #faf7f2;
   --ivory-dark: #efe8dd;
   --gold: #d4af37;
@@ -364,7 +364,7 @@ section, footer {
 .opening-groom, .opening-bride {
   font-family: var(--script);
   color: var(--ivory);
-  font-size: max(3rem, min(8vw, 6rem));
+  font-size: max(2rem, min(6vw, 4rem));
 }
 
 .opening-amp {

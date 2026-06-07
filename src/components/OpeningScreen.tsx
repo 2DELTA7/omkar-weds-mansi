@@ -44,7 +44,7 @@ export default function OpeningScreen() {
         <Image
           src="/ganpati1.png"
           alt="Lord Ganesha"
-          width={130}
+          width={100}
           height={100}
           priority
           className="ganesha-image"

@@ -4,9 +4,9 @@
 ========================================== */
 
 :root {
-  --navy: #081426;
-  --navy-light: #102544;
-  --navy-soft: #18345c;
+  --navy: #150826;
+  --navy-light: #221044;
+  --navy-soft: #2c185c;
 
   --ivory: #faf7f2;
   --ivory-dark: #efe8dd;
@@ -249,7 +249,7 @@ footer {
   font-family: var(--script);
 
   font-size:
-    clamp(3rem,8vw,6rem);
+    clamp(2rem,6vw,4rem);
 
   color: var(--ivory);
 }
