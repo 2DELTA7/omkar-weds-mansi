@@ -1,13 +1,12 @@
 import Image from "next/image";
-
+import CornerDecor from "../ui/CornerDecor";
 export default function Hero() {
   return (
     <section id="hero">
-
-      {/* Decorative Mandalas */}
-      <div className="mandala-one" />
-      <div className="mandala-two" />
-
+      <CornerDecor position="tl" />
+        <CornerDecor position="tr" />
+        <CornerDecor position="bl" />
+        <CornerDecor position="br" />
       <div className="hero-content fade-up">
         <Image
           src="/ganpati3.png"

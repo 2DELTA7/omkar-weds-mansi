@@ -7,8 +7,6 @@ export default function Couple() {
         title="The Blessed Couple"
         motif="✦"
       />
-
-      {/* Union Animation */}
       <div className="couple-union fade-up">
 
         <div className="rings-wrapper">

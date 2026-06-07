@@ -475,6 +475,75 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/src/components/effects/MarigoldShower.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>MarigoldShower
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+function MarigoldShower() {
+    _s();
+    const petals = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "MarigoldShower.useMemo[petals]": ()=>Array.from({
+                length: 25
+            }, {
+                "MarigoldShower.useMemo[petals]": (_, i)=>({
+                        id: i,
+                        left: Math.random() * 100,
+                        size: 20 + Math.random() * 18,
+                        delay: Math.random() * 8,
+                        duration: 8 + Math.random() * 6
+                    })
+            }["MarigoldShower.useMemo[petals]"])
+    }["MarigoldShower.useMemo[petals]"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "marigold-shower",
+        children: petals.map((petal)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "marigold-petal",
+                style: {
+                    left: "".concat(petal.left, "%"),
+                    fontSize: "".concat(petal.size, "px"),
+                    animationDelay: "".concat(petal.delay, "s"),
+                    animationDuration: "".concat(petal.duration, "s")
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    src: "/marigold.png",
+                    alt: "",
+                    width: 30,
+                    height: 30
+                }, void 0, false, {
+                    fileName: "[project]/src/components/effects/MarigoldShower.tsx",
+                    lineNumber: 34,
+                    columnNumber: 11
+                }, this)
+            }, petal.id, false, {
+                fileName: "[project]/src/components/effects/MarigoldShower.tsx",
+                lineNumber: 24,
+                columnNumber: 9
+            }, this))
+    }, void 0, false, {
+        fileName: "[project]/src/components/effects/MarigoldShower.tsx",
+        lineNumber: 22,
+        columnNumber: 5
+    }, this);
+}
+_s(MarigoldShower, "Al7BnUcJqysxbS1yco/iSNg1dUs=");
+_c = MarigoldShower;
+var _c;
+__turbopack_context__.k.register(_c, "MarigoldShower");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/src/components/OpeningScreen.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -486,9 +555,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$CornerDecor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/CornerDecor.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$effects$2f$MarigoldShower$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/effects/MarigoldShower.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -518,47 +589,38 @@ function OpeningScreen() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "opening-screen",
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$effects$2f$MarigoldShower$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/components/OpeningScreen.tsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$CornerDecor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 position: "tl"
             }, void 0, false, {
                 fileName: "[project]/src/components/OpeningScreen.tsx",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 1
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$CornerDecor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 position: "tr"
             }, void 0, false, {
                 fileName: "[project]/src/components/OpeningScreen.tsx",
-                lineNumber: 37,
+                lineNumber: 38,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$CornerDecor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 position: "bl"
             }, void 0, false, {
                 fileName: "[project]/src/components/OpeningScreen.tsx",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$CornerDecor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 position: "br"
             }, void 0, false, {
                 fileName: "[project]/src/components/OpeningScreen.tsx",
-                lineNumber: 39,
+                lineNumber: 40,
                 columnNumber: 3
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mandala-one"
-            }, void 0, false, {
-                fileName: "[project]/src/components/OpeningScreen.tsx",
-                lineNumber: 41,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mandala-two"
-            }, void 0, false, {
-                fileName: "[project]/src/components/OpeningScreen.tsx",
-                lineNumber: 42,
-                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "opening-content",
@@ -572,7 +634,7 @@ function OpeningScreen() {
                         className: "ganesha-image"
                     }, void 0, false, {
                         fileName: "[project]/src/components/OpeningScreen.tsx",
-                        lineNumber: 45,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -580,7 +642,7 @@ function OpeningScreen() {
                         children: "॥ श्री गणेशाय नमः ॥"
                     }, void 0, false, {
                         fileName: "[project]/src/components/OpeningScreen.tsx",
-                        lineNumber: 54,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -588,7 +650,7 @@ function OpeningScreen() {
                         children: "Dr. Omkar"
                     }, void 0, false, {
                         fileName: "[project]/src/components/OpeningScreen.tsx",
-                        lineNumber: 57,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -596,7 +658,7 @@ function OpeningScreen() {
                         children: "Weds"
                     }, void 0, false, {
                         fileName: "[project]/src/components/OpeningScreen.tsx",
-                        lineNumber: 61,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -604,7 +666,7 @@ function OpeningScreen() {
                         children: "Dr. Mansi"
                     }, void 0, false, {
                         fileName: "[project]/src/components/OpeningScreen.tsx",
-                        lineNumber: 65,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -612,7 +674,7 @@ function OpeningScreen() {
                         children: "Sunday • 19 July 2026"
                     }, void 0, false, {
                         fileName: "[project]/src/components/OpeningScreen.tsx",
-                        lineNumber: 69,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -621,13 +683,13 @@ function OpeningScreen() {
                         children: "✦ Open Invitation ✦"
                     }, void 0, false, {
                         fileName: "[project]/src/components/OpeningScreen.tsx",
-                        lineNumber: 73,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/OpeningScreen.tsx",
-                lineNumber: 44,
+                lineNumber: 41,
                 columnNumber: 7
             }, this)
         ]
@@ -790,4 +852,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_components_33b78cff._.js.map
+//# sourceMappingURL=src_components_711519d4._.js.map

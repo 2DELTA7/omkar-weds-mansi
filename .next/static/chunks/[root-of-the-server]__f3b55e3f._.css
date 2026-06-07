@@ -193,6 +193,20 @@
   --display: var(--font-display);
 }
 
+.opening-screen {
+  z-index: 99999;
+  background: radial-gradient(circle at top, #fffcf7 0%, #fdf4e7 35%, #f9ead2 70%, #f5e1be 100%);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -219,52 +233,6 @@ img {
 section, footer {
   z-index: 2;
   position: relative;
-}
-
-@keyframes rotateMandala {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateMandalaReverse {
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0);
-  }
-}
-
-@keyframes floatSoft {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .fade-up {
@@ -319,7 +287,6 @@ section, footer {
 
 .opening-screen {
   z-index: 99999;
-  background: radial-gradient(circle at top, var(--navy-soft), var(--navy));
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -363,8 +330,12 @@ section, footer {
 
 .opening-groom, .opening-bride {
   font-family: var(--script);
-  color: var(--ivory);
-  font-size: max(2rem, min(6vw, 4rem));
+  background: linear-gradient(135deg, #b8860b 0%, #d4a017 20%, #f0c832 50%, #d4a017 80%, #a07810 100%);
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 3px 8px rgba(212, 160, 23, .25));
+  -webkit-background-clip: text;
+  font-size: 68px;
+  line-height: 1;
 }
 
 .opening-amp {
@@ -373,9 +344,11 @@ section, footer {
 }
 
 .opening-date {
-  color: rgba(255, 255, 255, .8);
+  color: rgba(251, 33, 33, .8);
   letter-spacing: .15em;
   margin-top: 1rem;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .open-btn {
@@ -567,17 +540,17 @@ section, footer {
   line-height: 1.8;
 }
 
-.couple-section {
-  background: linear-gradient(180deg, var(--ivory), #f5efe7, var(--ivory));
-  padding: 6rem 1.5rem;
-}
-
 .couple-grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  max-width: 1100px;
-  margin: auto;
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
+}
+
+.couple-section {
+  background: linear-gradient(180deg, var(--ivory), #f5efe7, var(--ivory));
+  padding: 6rem 1.5rem;
 }
 
 .couple-card {
@@ -679,8 +652,10 @@ section, footer {
 }
 
 .countdown-grid {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(70px, 1fr));
+  gap: .75rem;
+  max-width: 650px;
+  margin: 0 auto;
   display: grid;
 }
 
@@ -998,7 +973,7 @@ footer:before {
 }
 
 @media (max-width: 992px) {
-  .couple-grid, .venue-grid, .events-grid, .invite-family-detail {
+  .venue-grid, .events-grid, .invite-family-detail {
     grid-template-columns: 1fr;
   }
 }
@@ -1011,18 +986,6 @@ footer:before {
 
   .invite-card {
     padding: 2rem 1.5rem;
-  }
-
-  .countdown-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .count-box {
-    padding: 1rem;
-  }
-
-  .count-num {
-    font-size: 2rem;
   }
 
   .couple-avatar {
@@ -1058,6 +1021,24 @@ footer:before {
 
   .open-btn {
     width: 100%;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+  }
+
+  .count-box {
+    padding: .75rem .25rem;
+  }
+
+  .count-num {
+    font-size: 1.4rem;
+  }
+
+  .count-unit {
+    letter-spacing: .08em;
+    font-size: .55rem;
   }
 }
 
@@ -1496,27 +1477,21 @@ footer:before {
   font-size: 1rem;
 }
 
-.couple-grid {
-  grid-template-columns: repeat(2, minmax(320px, 1fr));
-  align-items: stretch;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
+.couple-card {
+  padding: 1.5rem 1rem;
 }
 
-@media (max-width: 768px) {
-  .couple-grid {
-    grid-template-columns: 1fr;
-  }
+.couple-name {
+  font-size: 1.8rem;
+}
 
-  .wedding-ring {
-    font-size: 2.4rem;
-  }
+.couple-title {
+  font-size: .7rem;
+}
 
-  .union-text {
-    font-size: 1.2rem;
-  }
+.family-parents {
+  font-size: .8rem;
+  line-height: 1.6;
 }
 
 .patrika-section {
@@ -1557,6 +1532,17 @@ footer:before {
   box-shadow: 0 15px 35px rgba(212, 175, 55, .25);
 }
 
+@media (max-width: 480px) {
+  .couple-avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .couple-name {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .patrika-preview {
     height: 500px;
@@ -1565,6 +1551,90 @@ footer:before {
   .patrika-download-btn {
     text-align: center;
     width: 100%;
+  }
+}
+
+.marigold-shower {
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.marigold-petal {
+  opacity: .8;
+  filter: drop-shadow(0 4px 10px rgba(230, 126, 34, .25));
+  animation-name: marigoldFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -80px;
+}
+
+@keyframes marigoldFall {
+  0% {
+    opacity: 0;
+    transform: translateY(-120px)rotate(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(50vh)translateX(30px)rotate(180deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(120vh)translateX(-30px)rotate(360deg);
+  }
+}
+
+.couple-grid {
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  align-items: stretch;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .couple-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem;
+  }
+
+  .wedding-ring {
+    font-size: 2.4rem;
+  }
+
+  .union-text {
+    font-size: 1.2rem;
+  }
+
+  .couple-card {
+    padding: 1rem .75rem;
+  }
+
+  .couple-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+
+  .couple-name {
+    font-size: 1.3rem;
+  }
+
+  .family-parents {
+    font-size: .75rem;
+    line-height: 1.4;
   }
 }
 

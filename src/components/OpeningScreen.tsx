@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import CornerDecor from "./ui/CornerDecor";
+import MarigoldShower from "./effects/MarigoldShower";
 export default function OpeningScreen() {
   const [opened, setOpened] = useState(false);
 
@@ -32,17 +33,14 @@ export default function OpeningScreen() {
 
   return (
     <div className="opening-screen">
+      <MarigoldShower />
 <CornerDecor position="tl" />
   <CornerDecor position="tr" />
   <CornerDecor position="bl" />
   <CornerDecor position="br" />
-      {/* Decorative Mandalas */}
-      <div className="mandala-one" />
-      <div className="mandala-two" />
-
       <div className="opening-content">
         <Image
-          src="/ganpati1.png"
+          src="/ganpati5.png"
           alt="Lord Ganesha"
           width={100}
           height={100}
